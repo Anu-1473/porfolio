@@ -37,7 +37,7 @@ const About = () => {
               <img
                 src={profilePhoto}
                 alt="Anusha"
-                className="w-full h-96 object-cover rounded-lg shadow-card"
+                className="w-full h-96 object-cover object-[center_35%] rounded-lg shadow-card"
               />
             </Card>
           </motion.div>
