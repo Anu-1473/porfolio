@@ -7,12 +7,12 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Canva Core Platform",
+      title: "Canva App Integrations",
       description:
-        "Contributing to Canva's core design platform, engineering responsive features, optimizing frontend performance, and enhancing UI components.",
+        "Providing development support and maintenance for 14 apps integrated within the Canva ecosystem, and developing publishing integration apps like Facebook and Pinterest for seamless exporting.",
       image:
         "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop",
-      tech: ["React", "TypeScript", "Canvas API", "CSS Modules"],
+      tech: ["React", "TypeScript", "Canva Apps SDK", "REST APIs", "OAuth"],
       github: "https://github.com/AnushaUppuu",
       demo: "https://canva.com",
       category: "Frontend Development",

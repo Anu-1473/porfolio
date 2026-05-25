@@ -19,7 +19,7 @@ const Experience = () => {
       role: "Software Engineer",
       company: "EverestEngineering",
       period: "July 2024 - Present",
-      description: "Focusing on delivering high-quality, scalable, and maintainable software solutions while adhering to industry best practices. Actively participating in agile projects, applying innovative problem-solving skills, and collaborating with cross-functional teams to achieve key project goals. Committed to continuous learning, exploring emerging technologies, and refining development workflows to enhance engineering efficiency.",
+      description: "Providing development support and maintenance for 14 apps integrated within the Canva application ecosystem. Developed and published integration apps (such as Facebook and Pinterest) from Canva to streamline design sharing. Focused on delivering high-quality, scalable, and maintainable software solutions while adhering to industry best practices and collaborating with cross-functional teams to achieve key project goals.",
     },
     {
       role: "Curious Intern",
