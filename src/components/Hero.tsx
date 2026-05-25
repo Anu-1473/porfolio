@@ -14,7 +14,7 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       {/* Background gradient */}
-      <div className="absolute inset-0 gradient-hero opacity-90" />
+      <div className="absolute inset-0 bg-gradient-hero opacity-90" />
 
       {/* Animated background shapes */}
       <div className="absolute inset-0">
@@ -38,15 +38,15 @@ const Hero = () => {
             opacity: [0.2, 0.4, 0.2],
           }}
           transition={{
-            duration: 15,
+            duration: 20,
             repeat: Infinity,
             ease: "linear",
           }}
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-white/5 blur-2xl"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl"
         />
       </div>
 
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div className="relative z-10 text-left px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,10 +57,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold text-white"
+            className="text-5xl md:text-7xl font-bold text-foreground"
           >
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent dark:from-white dark:to-white/80">
               Anusha
             </span>
           </motion.h1>
@@ -69,32 +69,29 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-white/90 font-medium"
+            className="text-xl md:text-2xl text-muted-foreground font-medium"
           >
-            Aspiring Product Manager & Developer
+            Software Developer
           </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg text-white/80 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg text-muted-foreground/90 max-w-2xl leading-relaxed"
           >
-            Passionate about building innovative digital products that solve
-            real-world problems. I bridge the gap between technology and user
-            needs through strategic thinking and hands-on development.
+            I am a motivated and enthusiastic software developer who enjoys creating impactful applications. I focus on building user-friendly interfaces, writing clean, maintainable code, and collaborating to deliver practical solutions.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6"
+            className="flex flex-col sm:flex-row gap-4 justify-start items-start sm:items-center pt-6"
           >
             <Button
               size="lg"
-              variant="secondary"
-              className="bg-white text-primary hover:bg-white/90 shadow-elegant group"
+              className="bg-primary text-primary-foreground hover:bg-primary/95 shadow-elegant group"
             >
               <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Download Resume
@@ -104,7 +101,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               onClick={scrollToContact}
-              className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 group"
+              className="border-input text-foreground hover:bg-accent hover:text-accent-foreground group"
             >
               <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               Contact Me

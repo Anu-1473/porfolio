@@ -22,8 +22,10 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -46,7 +48,7 @@ const Navbar = ({ isDark, toggleTheme }: NavbarProps) => {
         <div className="flex justify-between items-center h-16">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold gradient-primary bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent"
           >
             Anusha
           </motion.div>

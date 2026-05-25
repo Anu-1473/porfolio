@@ -6,45 +6,40 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      name: "LinkedIn",
-      icon: Linkedin,
-      href: "https://linkedin.com/in/anusha",
-    },
-    {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/anusha",
+      href: "https://github.com/AnushaUppuu",
     },
     {
-      name: "Twitter",
-      icon: Twitter,
-      href: "https://twitter.com/anusha",
+      name: "LinkedIn",
+      icon: Linkedin,
+      href: "https://linkedin.com",
     },
     {
       name: "Email",
       icon: Mail,
-      href: "mailto:anusha@example.com",
+      href: "mailto:anushauppuu@gmail.com",
     },
   ];
 
   return (
-    <footer className="py-12 px-4 sm:px-6 lg:px-8 gradient-primary">
+    <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-primary text-white">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center space-y-8"
+          className="text-left space-y-8"
         >
           <div>
             <h3 className="text-2xl font-bold text-white mb-2">Anusha</h3>
             <p className="text-white/80">
-              Aspiring Product Manager & Developer
+              Software Developer
             </p>
           </div>
 
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-start space-x-6">
             {socialLinks.map((social) => (
               <motion.a
                 key={social.name}
@@ -60,7 +55,7 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-white/20 pt-8">
-            <p className="text-white/60 text-sm flex items-center justify-center gap-2">
+            <p className="text-white/60 text-sm flex items-center justify-start gap-2">
               © {currentYear} Anusha. Made with{" "}
               <Heart className="w-4 h-4 text-red-400 fill-current" /> and lots
               of coffee

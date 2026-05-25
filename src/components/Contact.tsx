@@ -37,27 +37,21 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      name: "LinkedIn",
-      icon: Linkedin,
-      href: "https://linkedin.com/in/anusha",
-      color: "hover:text-blue-600",
-    },
-    {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/anusha",
+      href: "https://github.com/AnushaUppuu",
       color: "hover:text-gray-900 dark:hover:text-white",
     },
     {
-      name: "Twitter",
-      icon: Twitter,
-      href: "https://twitter.com/anusha",
-      color: "hover:text-blue-400",
+      name: "LinkedIn",
+      icon: Linkedin,
+      href: "https://linkedin.com",
+      color: "hover:text-blue-600",
     },
     {
       name: "Email",
       icon: Mail,
-      href: "mailto:anusha@example.com",
+      href: "mailto:anushauppuu@gmail.com",
       color: "hover:text-red-500",
     },
   ];
@@ -70,15 +64,15 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-left mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Get In{" "}
-            <span className="gradient-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
               Touch
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl">
             I'm always interested in hearing about new opportunities and
             interesting projects
           </p>
@@ -97,9 +91,7 @@ const Contact = () => {
                 Let's work together
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Whether you're looking for a product manager who can bridge the
-                gap between business goals and technical implementation, or a
-                developer who understands user needs, I'd love to hear from you.
+                Whether you're looking for a software developer to build high-quality applications, write clean code, or collaborate on solving technical challenges, I'd love to hear from you.
               </p>
             </div>
 
@@ -126,7 +118,7 @@ const Contact = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="p-6 rounded-lg gradient-primary text-white">
+              <div className="p-6 rounded-lg bg-gradient-primary text-white">
                 <h4 className="font-semibold mb-2">Quick Response</h4>
                 <p className="text-white/90 text-sm">
                   I typically respond within 24 hours. For urgent matters, feel
@@ -142,7 +134,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Card className="p-8 shadow-elegant gradient-card border-0">
+            <Card className="p-8 shadow-elegant bg-gradient-card border-0">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
@@ -186,7 +178,7 @@ const Contact = () => {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full gradient-primary hover:shadow-hover transition-smooth group"
+                    className="w-full bg-gradient-primary hover:shadow-hover transition-smooth group text-white"
                   >
                     <Send className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
                     Send Message

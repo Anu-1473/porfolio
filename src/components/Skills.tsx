@@ -18,30 +18,33 @@ import {
 const Skills = () => {
   const skills = [
     {
-      category: "Technical Skills",
+      category: "Languages & Frontend",
       items: [
-        { name: "React & TypeScript", icon: Code2, level: "Advanced" },
-        { name: "Node.js & Python", icon: Database, level: "Intermediate" },
-        { name: "SQL & Analytics", icon: BarChart, level: "Advanced" },
-        { name: "UI/UX Design", icon: Palette, level: "Intermediate" },
+        { name: "React.js & React Native", icon: Smartphone, level: "Advanced" },
+        { name: "TypeScript & JavaScript", icon: Code2, level: "Advanced" },
+        { name: "HTML & CSS", icon: Globe, level: "Advanced" },
+        { name: "Java & C Programming", icon: Code2, level: "Intermediate" },
+        { name: "Web Accessibility (A11y)", icon: Brain, level: "Intermediate" },
       ],
     },
     {
-      category: "Product Management",
+      category: "Backend & Databases",
       items: [
-        { name: "Product Strategy", icon: Target, level: "Advanced" },
-        { name: "User Research", icon: Users, level: "Advanced" },
-        { name: "Data Analysis", icon: TrendingUp, level: "Advanced" },
-        { name: "Innovation", icon: Lightbulb, level: "Intermediate" },
+        { name: "Node.js & Express.js", icon: Database, level: "Advanced" },
+        { name: "REST APIs & Socket.io", icon: Globe, level: "Advanced" },
+        { name: "PostgreSQL, MySQL & MongoDB", icon: Database, level: "Advanced" },
+        { name: "ORMs & ODMs (Sequelize, Mongoose)", icon: Brain, level: "Advanced" },
       ],
     },
     {
-      category: "Tools & Platforms",
+      category: "DevOps, Tools & Practices",
       items: [
         { name: "Git & GitHub", icon: GitBranch, level: "Advanced" },
-        { name: "Web Technologies", icon: Globe, level: "Advanced" },
-        { name: "Mobile Development", icon: Smartphone, level: "Beginner" },
-        { name: "Product Analytics", icon: Brain, level: "Intermediate" },
+        { name: "CI/CD (Actions, Jenkins)", icon: Brain, level: "Intermediate" },
+        { name: "Docker & AWS", icon: Database, level: "Intermediate" },
+        { name: "TDD & Agile Practices", icon: Target, level: "Advanced" },
+        { name: "Stripe Payment Integration", icon: Lightbulb, level: "Advanced" },
+        { name: "AI Prompt Engineering", icon: Lightbulb, level: "Intermediate" },
       ],
     },
   ];
@@ -99,15 +102,15 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-left mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             My{" "}
-            <span className="gradient-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
               Skills
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl">
             A blend of technical expertise and product management capabilities
           </p>
         </motion.div>
@@ -121,8 +124,8 @@ const Skills = () => {
         >
           {skills.map((category, categoryIndex) => (
             <motion.div key={category.category} variants={itemVariants}>
-              <Card className="p-6 h-full shadow-card hover:shadow-hover transition-smooth gradient-card border-0">
-                <h3 className="text-xl font-semibold mb-6 text-center">
+              <Card className="p-6 h-full shadow-card hover:shadow-hover transition-smooth bg-gradient-card border-0">
+                <h3 className="text-xl font-semibold mb-6 text-left">
                   {category.category}
                 </h3>
 
@@ -142,7 +145,7 @@ const Skills = () => {
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
-                          <div className="p-2 rounded-lg gradient-primary">
+                          <div className="p-2 rounded-lg bg-gradient-primary text-white">
                             <skill.icon className="w-4 h-4 text-white" />
                           </div>
                           <span className="font-medium">{skill.name}</span>

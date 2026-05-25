@@ -7,70 +7,70 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-commerce Analytics Dashboard",
+      title: "Canva Core Platform",
       description:
-        "A comprehensive analytics platform for e-commerce businesses to track KPIs, user behavior, and sales performance with real-time data visualization.",
+        "Contributing to Canva's core design platform, engineering responsive features, optimizing frontend performance, and enhancing UI components.",
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tech: ["React", "TypeScript", "Chart.js", "Node.js", "PostgreSQL"],
-      github: "#",
-      demo: "#",
-      category: "Product Management",
+        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop",
+      tech: ["React", "TypeScript", "Canvas API", "CSS Modules"],
+      github: "https://github.com/AnushaUppuu",
+      demo: "https://canva.com",
+      category: "Frontend Development",
     },
     {
-      title: "Task Management Mobile App",
+      title: "SkyRoute — Flight Booking Web App",
       description:
-        "A cross-platform mobile application for team collaboration and project management with real-time synchronization and intuitive UI.",
+        "Built a flight booking system with dynamic pricing, React frontend, and a Ruby on Rails RESTful API backend, integrated with Supabase PostgreSQL for transaction management.",
       image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-      tech: ["React Native", "Firebase", "Redux", "TypeScript"],
-      github: "#",
+        "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop",
+      tech: ["React", "Ruby on Rails", "PostgreSQL", "Supabase", "ERB"],
+      github: "https://github.com/AnushaUppuu",
       demo: "#",
-      category: "Development",
+      category: "Full Stack",
     },
     {
-      title: "AI-Powered Recipe Finder",
+      title: "QuickChat — Chatting Application",
       description:
-        "Smart recipe recommendation system using machine learning to suggest personalized recipes based on dietary preferences and available ingredients.",
+        "Developed a secure, real-time chat application with phone OTP registration, Socket.IO messaging, FCM push notifications, and chat deletion features.",
       image:
-        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
-      tech: ["Python", "Machine Learning", "React", "FastAPI", "MongoDB"],
-      github: "#",
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+      tech: ["React Native", "Socket.IO", "PostgreSQL", "Node.js", "Firebase", "AWS"],
+      github: "https://github.com/AnushaUppuu",
       demo: "#",
-      category: "AI/ML",
+      category: "Mobile App",
     },
     {
-      title: "Financial Planning Tool",
+      title: "PetBuddy — Mobile Pet Care Management",
       description:
-        "Personal finance management platform with budget tracking, investment portfolio analysis, and financial goal setting capabilities.",
+        "Built a mobile-first pet care app for tracking medical records, feeding schedules, vet appointments, local notifications, and emergency contacts.",
+      image:
+        "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600&h=400&fit=crop",
+      tech: ["React Native", "TypeScript", "Node.js", "Express", "MongoDB", "Mongoose"],
+      github: "https://github.com/AnushaUppuu",
+      demo: "#",
+      category: "Mobile App",
+    },
+    {
+      title: "FinGrow — Personal Finance Tracker",
+      description:
+        "Created a full-stack personal finance tool for budget tracking, income logging, target milestones alerts, and CSV statement uploads with Jest TDD tests.",
       image:
         "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
-      tech: ["Vue.js", "Express.js", "MySQL", "Chart.js", "Stripe API"],
-      github: "#",
+      tech: ["React", "Node.js", "Express", "MongoDB", "CSV Import", "Jest"],
+      github: "https://github.com/AnushaUppuu",
       demo: "#",
-      category: "FinTech",
+      category: "Full Stack",
     },
     {
-      title: "Learning Management System",
+      title: "Hanami — E-Commerce Web App",
       description:
-        "Educational platform for online courses with interactive content, progress tracking, and community features for students and instructors.",
+        "Designed and developed a modern e-commerce apparel store featuring wishlisting, cart totals calculation, search filters, and product status APIs.",
       image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io", "AWS"],
-      github: "#",
+        "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop",
+      tech: ["React", "React Router", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+      github: "https://github.com/AnushaUppuu",
       demo: "#",
-      category: "EdTech",
-    },
-    {
-      title: "Social Media Analytics",
-      description:
-        "Comprehensive social media management tool with content scheduling, engagement analytics, and competitor analysis features.",
-      image:
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
-      tech: ["React", "Python", "Django", "PostgreSQL", "Redis"],
-      github: "#",
-      demo: "#",
-      category: "Marketing",
+      category: "Full Stack",
     },
   ];
 
@@ -101,15 +101,15 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-left mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Featured{" "}
-            <span className="gradient-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl">
             A showcase of my work combining product thinking with technical
             implementation
           </p>
@@ -129,7 +129,7 @@ const Projects = () => {
               whileHover={{ y: -10 }}
               className="group"
             >
-              <Card className="overflow-hidden h-full shadow-card hover:shadow-hover transition-smooth gradient-card border-0">
+              <Card className="overflow-hidden h-full shadow-card hover:shadow-hover transition-smooth bg-gradient-card border-0">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
@@ -164,21 +164,39 @@ const Projects = () => {
                   </div>
 
                   <div className="flex space-x-2 pt-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="flex-1 group/btn"
-                    >
-                      <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                      Code
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="flex-1 gradient-primary group/btn"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                      Demo
-                    </Button>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="w-full group/btn"
+                        >
+                          <Github className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                          Code
+                        </Button>
+                      </a>
+                    )}
+                    {project.demo && project.demo !== "#" && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <Button
+                          size="sm"
+                          className="w-full bg-gradient-primary group/btn text-white"
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                          Demo
+                        </Button>
+                      </a>
+                    )}
                   </div>
                 </div>
               </Card>
